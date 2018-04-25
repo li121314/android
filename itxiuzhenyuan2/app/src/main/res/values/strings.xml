@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">itxiuzhenyuan</string>
+    <string name="guanbi">关闭</string>
+    <string name="denglu">登陆</string>
+    <string name="zhuce">注册</string>
+    <string name="hint1">请输入手机号码</string>
+    <string name="hint2">请输入密码</string>
+    <string name="yanzheng">获取验证码</string>
+
+</resources>

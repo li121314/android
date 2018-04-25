@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg">
+        <Button
+            android:id="@+id/guanbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guanbi"
+            android:textColor="@color/white"
+            android:background="#00000000"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhuce"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/denglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/denglu"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/line2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iphone"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"/>
+
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:background="@null"
+                android:hint="@string/hint1"
+                android:textColorHint="#ccc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2.2"
+            android:layout_below="@id/line2.1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/locked"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:background="@null"
+                android:hint="@string/hint2"
+                android:textColorHint="#ccc"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2.3"
+            android:layout_below="@id/line2.1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/locked"
+                android:layout_marginLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/yanzheng"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLines="1"
+                android:background="@null"
+
+                android:textColorHint="#ccc"/>
+
+           <Button
+               android:id="@+id/yanzhengbtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="@string/yanzheng"
+               android:textColor="@color/white"
+               android:padding="-10dp"
+               android:minHeight="28dp"
+               />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zhucebtn"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zhuce"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/bg"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
